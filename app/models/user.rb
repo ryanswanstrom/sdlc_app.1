@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :tasks
   has_many :notifications
   belongs_to :organization
+  has_many :events
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)
