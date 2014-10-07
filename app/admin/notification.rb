@@ -1,4 +1,5 @@
 ActiveAdmin.register Notification do
+  permit_params :value
 
 
   # See permitted parameters documentation:
