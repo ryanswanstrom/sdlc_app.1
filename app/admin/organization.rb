@@ -1,4 +1,5 @@
 ActiveAdmin.register Organization do
+  permit_params :title, :txt, :webpage
 
 
   # See permitted parameters documentation:
